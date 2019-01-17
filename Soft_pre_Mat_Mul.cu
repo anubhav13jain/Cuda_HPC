@@ -56,7 +56,9 @@ __global__ void matMul_Soft_prefetch(double *d_a, double *d_b, double *d_c, int 
 /*------------------------------*/
 
 int main(int argc, char const *argv[]) {
-	int N=800;
+	/*Matrix A size = M X N and Matrix B size = N X K*/
+	
+	int N=800;  
 	int M=N,K=N;
 	double h_a[M][N],h_b[N][K],h_c[M][K];
 	double *d_a,*d_b,*d_c;
