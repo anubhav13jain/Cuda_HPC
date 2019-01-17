@@ -33,6 +33,7 @@ __global__ void matMul(double *d_a,double *d_b,double *d_c, int M, int N, int K)
 /*------------------------------*/
 
 int main(int argc, char const *argv[]) {
+	/*Matrix A size = M X N and Matrix B size = N X K*/
 	
 	int N=800, M=N,K=N;
 	double h_a[M][N],h_b[N][K],h_c[M][K];
